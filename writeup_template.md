@@ -25,7 +25,7 @@ The goals / steps of this project are the following:
 
 My pipeline consisted of 5 steps. First, I converted the images to grayscale, then I smoothed them with Gaussian filter and used Canny edge detection on top of that. The region of interest on the image was limited only to the viewing angle of the lane to eliminate unnecessary segments. To connect the nearby segments oriented in the same direction I used Hough transform. 
 
-In order to draw a single line on the left and right lanes, I modified the draw_lines() function by ...
+In order to draw a single line on the left and right lanes, I modified the draw_lines() function by separting left and right lane according to the inclination of the segments and excluding very vertical segments. Averaging of the segment centers and their derivatives was done and a single line on the left and right side of the image were defined. 
 
 If you'd like to include images to show how the pipeline works, here is how to include an image: 
 
