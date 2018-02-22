@@ -35,13 +35,14 @@ If you'd like to include images to show how the pipeline works, here is how to i
 ### 2. Identify potential shortcomings with your current pipeline
 
 
-One potential shortcoming would be what would happen when the driver turns.  
+One potential shortcoming would be what would happen when the driver turns (curves and changing region of interest not included in the model).  
 
-Another shortcoming could be lightning conditions. 
+Another shortcoming could be changing lightning conditions. 
+
 
 
 ### 3. Suggest possible improvements to your pipeline
 
-A possible improvement would be to include curves into the pipeline. 
+A possible improvement would be to include curves and adaptive viewing angle (region of interest) into the pipeline. 
 
-Another potential improvement could be to experiment with different color spaces. 
+Another potential improvement could be to experiment with different color spaces that are not dependant on the lightning conditions (HSV). 
